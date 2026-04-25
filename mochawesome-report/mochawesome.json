@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-25T20:50:54.238Z",
+    "end": "2026-04-25T20:50:54.245Z",
+    "duration": 7,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1f42e048-12d0-4612-b1cf-8e0d7d59c70e",
+      "title": "",
+      "fullFile": "C:\\Projects\\aula-05-exercicio\\test\\gestaoLivros.test.js",
+      "file": "\\test\\gestaoLivros.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+          "title": "Testando função buscarTituloDoLivroPorID",
+          "fullFile": "C:\\Projects\\aula-05-exercicio\\test\\gestaoLivros.test.js",
+          "file": "\\test\\gestaoLivros.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Retorna o título correto para ID válido",
+              "fullTitle": "Testando função buscarTituloDoLivroPorID Retorna o título correto para ID válido",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resultado = buscarTituloDoLivroPorID(1);\nassert.strictEqual(resultado, 'Se Houver Amanhã');",
+              "err": {},
+              "uuid": "39d531bb-7369-4370-8eba-96483c5ef813",
+              "parentUUID": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Retorna mensagem para ID não encontrado",
+              "fullTitle": "Testando função buscarTituloDoLivroPorID Retorna mensagem para ID não encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resultado = buscarTituloDoLivroPorID(99);\nassert.strictEqual(resultado, 'ID não encontrado.');",
+              "err": {},
+              "uuid": "da69bb41-23e9-4996-97c8-982a2c901a5e",
+              "parentUUID": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Lança erro para ID menor que 1",
+              "fullTitle": "Testando função buscarTituloDoLivroPorID Lança erro para ID menor que 1",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n    function() { buscarTituloDoLivroPorID(0); },\n    { message: 'O ID precisa ser informado ou maior que 0' }\n);",
+              "err": {},
+              "uuid": "d7ea8095-f08b-4c4c-bea2-eaeeee63bb0f",
+              "parentUUID": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Lança erro para ID igual a nulo",
+              "fullTitle": "Testando função buscarTituloDoLivroPorID Lança erro para ID igual a nulo",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n    function() { buscarTituloDoLivroPorID(null); },\n    { message: 'O ID precisa ser informado ou maior que 0' }\n);",
+              "err": {},
+              "uuid": "5a9c6fc0-1900-48bb-bb83-4636b9dd6e8b",
+              "parentUUID": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Lança erro para ID não informado",
+              "fullTitle": "Testando função buscarTituloDoLivroPorID Lança erro para ID não informado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n    function() { buscarTituloDoLivroPorID(undefined); },\n    { message: 'O ID precisa ser informado ou maior que 0' }\n);",
+              "err": {},
+              "uuid": "fe26b13b-78fc-4009-9248-b81f4e0cca8a",
+              "parentUUID": "5e2b5a3a-0bed-4fee-9765-6e63acecb265",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "39d531bb-7369-4370-8eba-96483c5ef813",
+            "da69bb41-23e9-4996-97c8-982a2c901a5e",
+            "d7ea8095-f08b-4c4c-bea2-eaeeee63bb0f",
+            "5a9c6fc0-1900-48bb-bb83-4636b9dd6e8b",
+            "fe26b13b-78fc-4009-9248-b81f4e0cca8a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
